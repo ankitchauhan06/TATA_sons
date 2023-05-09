@@ -8,101 +8,241 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2c9402b65b.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <style>
+      /*main banner*/
+ 
+ /* .container-fluid {
+  position: relative;
+  width: 100%;
+  padding: 3rem; 
+  }  */
+  #poster{
+ background-image: url(Business\ banner.jpg);
+ height: 700px;
+ width: 100%;
+ padding-top: 15px;
+ padding-bottom: 20vh;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: flex-start;
+ } 
+  nav {
+    background-color:none;
+    padding: 10px;
+   } 
+  .head-poster{ 
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -5px; 
+     color: #fff; 
+  }
+
+  .header-h1 {
+   position: absolute;
+   margin-top: 278px;
+   margin-left: 91px;
+   color: #fff;
+   font-weight: bolder;
+   font-size: 50px;
+  }
+  
+  .tata {
+    position: absolute;
+    color: #fff;
+    margin-left: 95px;
+    margin-top: 514px;
+    line-height: 1;
+   }  
+  .progress-bar {
+    width: 15%;
+    background-color: rgba(192, 182, 182, 0.473);  /*Transparent background color */
+    border-radius: 7px;
+    float: right;
+    margin-right: 4rem;
+    margin-bottom: 415px;
+    height: 20px;
+    border-style: ridge;
+    overflow: hidden;
+    } 
+  
+  .progress { 
+    width: 20%; /*Example:  20% progress */
+     background-color: rgba(76, 175, 80, 0.8); /*Transparent progress color */
+     transition: width 0.3s ease-in-out;
+    padding: 15px;
+    background-color: #fff; 
+   }
+  i{
+  float: right;
+  margin-right: 4rem;
+  margin-top: -4px;
+  font-size: 27px;
+  color: #dbd2d2d7;
+ } 
+ .V-center{
+  margin-top: 38px;
+  font-size: 30px;
+  line-height: 0.5;
+ } 
+ @media screen and (max-width:700px){
+  .progress-bar {
+    width: 15%;
+    margin-right: 2rem;
+  }
+  
+  .progress { 
+    padding: 8px;
+   }
+  i {
+    margin-right: 2rem;
+    margin-top: -2px;
+    font-size: 23px;
+ }
+ .head-poster {
+    margin-top: -11px;
+    font-size: 17px;
+}
+
+  .header-h1 {
+    font-size: 40px;
+  }
+  .tata{
+    font-size: 15px;
+    margin-top: 481px;
+  }
+ }
+ @media screen and (max-width:500px){
+  #poster{
+    height: 400px;
+    width: 100%;
+  }
+  .progress-bar {
+    width: 15%;
+    margin-right: 1rem;
+    margin-top: 226px;
+    height: 14px;
+  }
+  
+  .progress { 
+    padding: 8px;
+   }
+  i {
+    margin-right: 2rem;
+    margin-top: 226px;
+    font-size: 15px;
+ }
+ .head-poster {
+    margin-top: 221px;
+    font-size: 11px;
+    margin-left: 20px;
+}
+
+  .header-h1 {
+    font-size: 25px;
+    margin-left: 38px;
+    margin-bottom: 44px;
+  }
+  .tata{
+    font-size: 11px;
+    margin-top: 372px;
+    margin-left: 42px;
+  }
+ }
+    </style>
 </head>
 <body>
  <!-- poster -->
   <div id="poster" class="uni-padding">
        <div class="container-fluid">
     <nav>
-     <h5 class="main">EMBRACE</h5><br>
-     <h2 class="main1">LITE</h2>
+      <h5 class="head-poster">EMBRACE <br><span class="span-lite"><h1>LITE</h1></span></h5>
      <i class="fa-solid fa-bars"></i>
       <div class="progress-bar">
         <div class="progress"></div>
       </div> 
      </div>
     </nav>
-    <h1>30 companies<br> 
-      10 verticals<br>
-      150 countries.</h1>
+    <h1 class="header-h1">30 <span style="font-weight: lighter;">companies.</span><br> 
+     10 <span style="font-weight: lighter; ">verticals.</span>  <br>
+      150 <span style="font-weight: lighter;">countries.</span> </h1>
    <p class="tata">The Tata Group has grown from a family business <br>
       to a global powerhouse.</p>
   </div>
 
   <!-- discription -->
 
-  <div class="discription">
-       <div class="container-fluid">
+  
+       <div class="container">
           <div class="row" style="padding-top: 20px;">
-            <div class="col-3">
+            <div class="col-md-3">
               <h6 class="text-center" style="font-weight: bolder; font-size: 18px; padding-bottom: 13px;"> Financials</h6>
-              <div class="px-3 py-3" style="background-color: #FAB446; height: 200px; align-items: center;">
-              <h4>$128</h4>
-              <h5>billion+</h5>
-              <p>revenue with market cap of $242 billion+</p>
+              <div class="px-3 py-3" style="background-color: #FAB446; height: 210px;">
+              <h4 class="V-center" style="font-weight: bold;">$128</h4>
+              <h5 style="font-weight: bold;">billion+</h5>
+              <p style="line-height: 1.2;">revenue with market cap of <br> $242 billion+</p>
             </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <h6 class="text-center" style="font-weight: bolder; font-size: 18px; padding-bottom: 13px;"> Operations</h6>
-              <div class="px-3 py-3" style="background-color: #05C3B4; height: 200px;">
-              <h4>29</h4>
-              <h5>publicly-listed</h5>
-              <p>companies in 10 major industry domains</p>
+              <div class="px-3 py-3" style="background-color: #05C3B4; height: 210px;">
+              <h4 class="V-center" style="font-weight: bold;">29</h4>
+              <h5 style="font-weight: bold;">publicly-listed</h5>
+              <p style="line-height: 1.2;">companies in 10 major <br> industry domains</p>
             </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <h6 class="text-center" style="font-weight: bolder; font-size: 18px; padding-bottom: 13px;"> Brands</h6>
-             <div class="px-3 py-3" style="background-color: #4187C8; height: 200px;">
-              <img src="india.png" height="50px"width="50px" alt="map">
-              <p>India's most 
+             <div class="px-3 py-3" style="background-color: #4187C8; height: 210px;">
+              <img class="V-center" style="font-weight: bold;" src="india.png" height="50px"width="50px" alt="map">
+              <p style="line-height: 1.2;">India's most <br> 
                 valuable brand*</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <h6 class="text-center" style="font-weight: bolder; font-size: 18px; padding-bottom: 13px;">People</h6>
-                <div class="px-3 py-3" style="background-color: #E66964; height: 200px;;">
-                <h4>9,00,000</h4>
-                <h5>Employees</h5>
-                <p>across companies</p>
+                <div class="px-3 py-3" style="background-color: #E66964; height: 210px;">
+                <h4 class="V-center" style="font-weight: bold;">9,00,000+</h4>
+                <h5 style="font-weight: bold;">Employees</h5>
+                <p style="line-height: 1.2;">across companies</p>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top: 10px;">
-            <div class="col-3">
-              <div class="px-3 py-3" style="background-color: #FAB446; height: 200px;">
-              <h4>$128</h4>
-              <h5>billion+</h5>
-              <p>revenue with market cap of $242 billion+</p>
+          <div class="row pt-4">
+            <div class="col-md-3">
+              <div class="px-3 py-3" style="background-color: #FAB446; height: 210px;">
+              <h4 class="V-center" style="font-weight: bold; line-height: 1.2;">66%</h4>
+              <p style="line-height: 1.2;">of Tata Sons' equity held by <br> philanthropic Tata Trusts</p>
             </div>
             </div>
-            <div class="col-3 px-3">
-              <div class="px-3 py-3" style="background-color: #05C3B4; height: 200px;">
-              <h4>29</h4>
-              <h5>publicly-listed</h5>
-              <p>companies in 10 major industry domains</p>
+            <div class="col-md-3">
+              <div class="px-3 py-3" style="background-color: #05C3B4; height: 210px;">
+              <h4 class="V-center" style="font-weight:bold ;">100+</h4>
+              <h5 style="font-weight: bold;">Countries</h5>
+              <p style="line-height: 1.2;">Spanning across <br> 
+                6 continents</p>
             </div>
             </div>
-            <div class="col-3">
-             <div class="px-3 py-3" style="background-color: #4187C8; height: 200px;">
-              <h4>Top 100</h4>
-              <p>Only Indian brand in the world's top 100*</p>
-              <p style="color: #000000; font-weight: lighter; font-size: small; padding-top: 7px;">*Sources: Brand Finance, Global 500, 2021.</p>
+            <div class="col-md-3">
+             <div class="px-3 py-3" style="background-color: #4187C8; height: 210px;">
+              <h4 class="V-center" style="font-weight: bold; line-height: 1;">Top 100</h4>
+              <p style="line-height: 1.2;">Only Indian brand in the <br> world's top 100*</p>
+              <p class="para-7" style="color: #000000; font-weight: lighter; font-size: 10px; padding-top: 14px;">*Sources: Brand Finance, Global 500, 2021.</p>
               </div>
             </div>
-            <div class="col-3">
-                <div class="px-3 py-3" style="background-color: #E66964; height: 200px;">
-                <h4>2,00,000+</h4>
-                <h5>Women</h5>
-                <p>employees in the workforce</p>
+            <div class="col-md-3">
+                <div class="px-3 py-3" style="background-color: #E66964; height: 210px; align-items: center;">
+                <h4 class="V-center" style="font-weight: bold;">2,00,000+</h4>
+                <h5 style="font-weight: bold;">Women</h5>
+                <p style="line-height: 1.2;">employees in the workforce</p>
               </div>
             </div>
         </div>
       </div>
-      <div class="text-center">
-      <p style="font-size: 13px; margin-top: -40px;">From a start-up in 1868 to a global powerhouse TATA GROUP</p>
+      <div class="text-center mt-3">
+      <p style="font-size: 13px;">From a start-up in 1868 to a global powerhouse TATA GROUP</p>
       </div>
-  </div>
-  
-  
 </body>
 </html>
